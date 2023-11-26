@@ -9,52 +9,22 @@
 
     <TextView
         android:id="@+id/textViewDescription"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
+        android:layout_width="392dp"
+        android:layout_height="35dp"
         android:text="Description"
         android:textColor="#081B85"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
-
-    <TextView
-        android:id="@+id/textViewLocation"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:text="Location"
-        android:textColor="#081B85"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
-
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="270dp"
-        android:layout_height="30dp"
-        android:text="Name"
-        android:textColor="#081B85"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintVertical_bias="0.102" />
 
     <TextView
         android:id="@+id/textViewPhone"
-        android:layout_width="270dp"
+        android:layout_width="392dp"
         android:layout_height="30dp"
         android:text="Phone"
         android:textColor="#081B85"
@@ -62,10 +32,40 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.531" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="392dp"
+        android:layout_height="30dp"
+        android:text="Location"
+        android:textColor="#081B85"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="392dp"
+        android:layout_height="30dp"
+        android:text="Name"
+        android:textColor="#081B85"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
 
     <Button
         android:id="@+id/doneBtn"

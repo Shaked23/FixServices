@@ -54,7 +54,7 @@ public class PresentRequestFragment extends Fragment {
         TextView location = view.findViewById(R.id.textViewLocation);
         TextView description = view.findViewById(R.id.textViewDescription);
         TextView nameUser = view.findViewById(R.id.textViewNameUser);
-        TextView PhoneUser = view.findViewById(R.id.textViewPhone);
+        TextView PhoneUser = view.findViewById(R.id.textViewPhoneUser);
         Button backBtn = view.findViewById(R.id.backBtn);
         Button navigateBtn = view.findViewById(R.id.navigateBtn);
         packageManager = requireActivity().getPackageManager();

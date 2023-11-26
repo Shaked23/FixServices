@@ -27,7 +27,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textViewPhoneUser"
+            android:id="@+id/textViewPhone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

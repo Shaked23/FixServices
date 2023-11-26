@@ -1,6 +1,7 @@
 package com.example.fixservices.adapters;
 
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,11 +46,10 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.MyViewHo
 
         textViewLocation.setText("Location: \n" + dataSet.get(position).getLocation());
         float[] distance = new float[1];
-        Location.distanceBetween(Double.parseDouble(currentLocation.get_Latitude()), Double.parseDouble(currentLocation.get_Longitude()), dataSet.get(position).getLatitude(), dataSet.get(position).getLongitude(), distance);
-//            Log.d("TAG", currentLocation.get_Latitude());
-//            Log.d("TAG", currentLocation.get_Longitude());
-//            Log.d("TAG", dataSet.get(position).getLatitude().toString());
-//            Log.d("TAG", dataSet.get(position).getLongitude().toString());
+        Location.distanceBetween(Double.parseDouble(currentLocation.get_Latitude()),
+                Double.parseDouble(currentLocation.get_Longitude()), dataSet.get(position).getLatitude(),
+                dataSet.get(position).getLongitude(), distance);
+        Log.d("TAG", String.valueOf(distance[0]));
         textViewDistance.setText("Distance: " + String.format("%.3f", (distance[0] * 2)/1000) + " km");
         textViewDescription.setText("Description: \n" + dataSet.get(position).getDescription());
 
@@ -85,7 +85,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.MyViewHo
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             textLocation = itemView.findViewById(R.id.textViewLocation);
-            textDistance = itemView.findViewById(R.id.textViewName);
+            textDistance = itemView.findViewById(R.id.textViewDistance);
             textDescription = itemView.findViewById(R.id.textViewDescription);
         }
     }
