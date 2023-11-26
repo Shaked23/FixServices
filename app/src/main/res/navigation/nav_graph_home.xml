@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/presentRequestFragment"
+        android:name="com.example.fixservices.fragments.PresentRequestFragment"
+        android:label="fragment_present_request"
+        tools:layout="@layout/fragment_present_request">
+        <action
+            android:id="@+id/action_presentRequestFragment_to_requestsFragment"
+            app:destination="@id/requestsFragment" />
+        <action
+            android:id="@+id/action_presentRequestFragment_to_myRequestFragment"
+            app:destination="@id/myRequestFragment" />
+    </fragment>
+    <navigation
+        android:id="@+id/requests"
+        app:startDestination="@id/requestsFragment">
+        <fragment
+            android:id="@+id/requestsFragment"
+            android:name="com.example.fixservices.fragments.RequestsFragment"
+            android:label="fragment_requests"
+            tools:layout="@layout/fragment_requests">
+            <action
+                android:id="@+id/action_requestsFragment_to_presentRequestFragment"
+                app:destination="@id/presentRequestFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/presentRequestFragment"
+            android:name="com.example.fixservices.fragments.PresentRequestFragment"
+            android:label="fragment_present_request"
+            tools:layout="@layout/fragment_present_request">
+            <action
+                android:id="@+id/action_presentRequestFragment_to_requestsFragment"
+                app:destination="@id/requestsFragment" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fixservices.fragments.LoginFragment"
+        android:label="LoginFragment"
+        android:layout="@layout/fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_regFragmentUser"
+            app:destination="@id/registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fixservices.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/details" />
+        <action
+            android:id="@+id/action_homeFragment_to_myRequestFragment"
+            app:destination="@id/myRequestFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_pricesFragment"
+            app:destination="@id/pricesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profHomeFragment"
+            app:destination="@id/profHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRequestFragment"
+        android:name="com.example.fixservices.fragments.MyRequestsFragment"
+        android:label="fragment_my_request"
+        tools:layout="@layout/fragment_my_requests">
+        <action
+            android:id="@+id/action_MyRequestFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_myRequestFragment_to_presentRequestFragment"
+            app:destination="@id/presentRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.fixservices.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.example.fixservices.fragments.NewRequestFragment"
+        android:label="fragment_request"
+        tools:layout="@layout/fragment_new_request">
+        <action
+            android:id="@+id/action_requestFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <navigation android:id="@+id/registration"
+        app:startDestination="@id/regFragmentUser">
+        <fragment
+            android:id="@+id/regFragmentUser"
+            android:name="com.example.fixservices.fragments.RegUserFragment"
+            android:label="regFragmentUser"
+            tools:layout="@layout/fragment_reg_user">
+            <action
+                android:id="@+id/action_regFragmentUser_to_regProfessionalFragment"
+                app:destination="@id/regProfessionalFragment" />
+            <action
+                android:id="@+id/action_regFragmentUser_to_loginFragment"
+                app:destination="@id/loginFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/regProfessionalFragment"
+            android:name="com.example.fixservices.fragments.RegProfessionalFragment"
+            android:label="fragment_reg_professional"
+            tools:layout="@layout/fragment_reg_professional">
+            <action
+                android:id="@+id/action_regProfessionalFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+            <action
+                android:id="@+id/action_regProfessionalFragment_to_regFragmentUser"
+                app:destination="@id/regFragmentUser" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/details"
+        app:startDestination="@id/detailsFragment">
+        <fragment
+            android:id="@+id/detailsFragment"
+            android:name="com.example.fixservices.fragments.DetailsFragment"
+            android:label="fragment_details"
+            tools:layout="@layout/fragment_details">
+            <action
+                android:id="@+id/action_detailsFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+            <action
+                android:id="@+id/action_detailsFragment_to_updateDetailsFragment"
+                app:destination="@id/updateDetailsFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/updateDetailsFragment"
+            android:name="com.example.fixservices.fragments.UpdateDetailsFragment"
+            android:label="fragment_update_details"
+            tools:layout="@layout/fragment_update_details">
+            <action
+                android:id="@+id/action_updateDetailsFragment_to_detailsFragment"
+                app:destination="@id/detailsFragment" />
+        </fragment>
+    </navigation>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.fixservices.activities.MapsActivity"
+        android:label="activity_maps" />
+    <fragment
+        android:id="@+id/pricesFragment"
+        android:name="com.example.fixservices.fragments.PricesFragment"
+        android:label="PricesFragment">
+        <action
+            android:id="@+id/action_pricesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profHomeFragment"
+        android:name="com.example.fixservices.fragments.ProfHomeFragment"
+        android:label="fragment_prof_home"
+        tools:layout="@layout/fragment_professional" >
+        <action
+            android:id="@+id/action_profHomeFragment_to_myRequestFragment"
+            app:destination="@id/myRequestFragment" />
+    </fragment>
+</navigation>

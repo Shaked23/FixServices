@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:orientation="vertical"
+    tools:context=".fragments.UpdateDetailsFragment">
+
+
+    <Spinner
+        android:id="@+id/spinnerDomain"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="358dp"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="#83D6E1"
+        android:textColorHint="#83D6E1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="359dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Phone"
+        android:textColor="#83D6E1"
+        android:textColorHint="#83D6E1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:text="Update"
+        android:textColor="#83D6E1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:strokeColor="#83D6E1"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:text="Back"
+        android:textColor="#83D6E1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:strokeColor="#83D6E1"
+        app:strokeWidth="3dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="0dp" />
+    <solid android:color="#FFFFFF" />
+    <padding
+        android:left="1dp"
+        android:right="1dp" />
+    <stroke
+        android:color="#CCCCCC"
+        android:width="1dp"
+        android:dashWidth="0dp"
+    android:dashGap="0dp" /> <!-- Set dashGap to 0 to create a solid line -->
+</shape>
+

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "268500858936",
+    "firebase_url": "https://fixservices-aa24e-default-rtdb.firebaseio.com",
+    "project_id": "fixservices-aa24e",
+    "storage_bucket": "fixservices-aa24e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268500858936:android:126c09cf686a214d710ecd",
+        "android_client_info": {
+          "package_name": "com.example.fixservices"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFoqlersPcL3jplGkjTrKZB0qJQNtjTpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268500858936:android:503fe68f044863e8710ecd",
+        "android_client_info": {
+          "package_name": "com.example.lesson6_10823"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFoqlersPcL3jplGkjTrKZB0qJQNtjTpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

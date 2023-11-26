@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg">
+
+    <LinearLayout
+        android:id="@+id/fragmentContainerView2"
+        android:layout_width="365dp"
+        android:layout_height="703dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewPhoneUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Phone"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewDomain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Domain"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewExperience"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Experience"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Score"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewRaters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Raters"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Register Date"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewUID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="UID"
+            android:textColor="#83D6E1"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
